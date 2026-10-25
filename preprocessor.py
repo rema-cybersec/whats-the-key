@@ -32,7 +32,7 @@ import yt_dlp
 
 SAMPLE_RATE    = 22050   # Hz — librosa's default; good balance of quality vs size
 WINDOW_SECONDS = 5       # how many seconds each audio slice covers
-NUM_WINDOWS    = 5       # how many slices to take per song
+NUM_WINDOWS    = 10       # how many slices to take per song
                          # (1 at start, 3 spread through middle, 1 near end)
 
 CSV_PATH = os.path.join(os.path.dirname(__file__), "data", "features.csv")
